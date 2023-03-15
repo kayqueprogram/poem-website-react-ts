@@ -1,0 +1,17 @@
+:root {
+  --color-white: #fff;
+  --color-dark1: #272727;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: var(--color-dark1);
+  color: var(--color-white);
+}
+
