@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import doki_home from './assets/doki-home.png'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './components/pages/About';
+import Home from './components/pages/Home';
 import books from './assets/livros.png'
-import CardPoems from './components/layout/CardPoems'
 import Navbar from './components/layout/Navbar'
 
 import './App.css'
@@ -11,8 +12,15 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar src={books} />
-     <CardPoems src={doki_home} text='Games'/>
+      <Router>
+        <Navbar src={books} />
+      
+        <Routes>
+        <Route  path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+
+      </Routes>
+      </Router>
     </div>
   )
 }

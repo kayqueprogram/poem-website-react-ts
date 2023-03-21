@@ -1,4 +1,5 @@
 import style from './Navbar.module.css'
+import { Link } from 'react-router-dom'
 
 function Navbar({ src }: { src?: string }) {
     return (
@@ -9,9 +10,9 @@ function Navbar({ src }: { src?: string }) {
                     <div className={style.img_logo_header}>
                         <img src={src} alt="imagem do header" />
                     </div>
-                    <a href="#" className={style.active}>Home</a>
+                    <Link to='/' className={style.active}>Home</Link>
                     <a href="#">Categorias</a>
-                    <a href="#">Sobre nós</a>
+                    <Link to='/about' >Sobre nós</Link>
                     <a href="#">Contato</a>
                 </div>
 
