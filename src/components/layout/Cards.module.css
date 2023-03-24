@@ -4,9 +4,10 @@
 }
 
 .card_home1 {
-    width: 497px;
+    width: 450px;
     padding: 20px 20px;
     margin: 30px;
+    margin-top: 80px;
     background: var(--color-dark3);
     border-radius: 10px; 
     position: relative;
@@ -35,6 +36,26 @@
     height: 5px;
     background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
     border-radius: 10px 10px;
+}
+
+.card_person  img{
+    width: 48%;
+    border-radius: 50%;
+}
+
+.card_person {
+    width: 400px;
+    padding: 20px 10px 20px 10px;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5em;
+    height: 100vh;
+    transition: 1s;
 }
 
 @keyframes SlideIn {

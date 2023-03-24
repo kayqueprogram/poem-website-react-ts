@@ -1,12 +1,12 @@
-import style from './CardPoems.module.css'
-import { Link } from 'react-router-dom'
+import style from './Cards.module.css'
+
 
 function CardPoems({ src, text }: { src?: string, text?: string }) {
     return (
-        <Link to='/'><div className={style.card_home1}>
+        <div className={style.card_home1}>
             <img src={src} alt="" />
             <p>{text}</p>
-        </div> </Link>
+        </div> 
     )
 }
 

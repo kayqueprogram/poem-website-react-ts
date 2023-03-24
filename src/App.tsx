@@ -6,6 +6,8 @@ import books from './assets/livros.png'
 import Navbar from './components/layout/Navbar'
 
 import './App.css'
+import PoemGames from './components/pages/PoemGames';
+import CardPerson from './components/pages/CardPerson';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +20,8 @@ function App() {
         <Routes>
         <Route  path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-
+        <Route path='/games' element={<PoemGames />} />
+        <Route path='/cardPerson' element={<CardPerson />} />
       </Routes>
       </Router>
     </div>
