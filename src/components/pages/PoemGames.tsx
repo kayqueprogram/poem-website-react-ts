@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import CardPoems from "../layout/CardPoems"
+import CardPoems from "../layout/CardGames"
 import natsuki from '../../assets/natsuki.png'
 import natExitMusic from '../../assets/natExit.png'
 import yuriFallen from '../../assets/yuriFallen.png'

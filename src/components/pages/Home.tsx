@@ -1,4 +1,4 @@
-import CardPoems from '../layout/CardPoems'
+import CardGames from '../layout/CardGames'
 import doki_home from '../../assets/doki-home.png'
 import { Link } from 'react-router-dom'
 
@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
         <Link to='/games'>
-        <CardPoems src={doki_home} text='Games'/>
+        <CardGames src={doki_home} text='Games'/>
         </Link>
         </>
     )

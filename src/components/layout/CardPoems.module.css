@@ -1,0 +1,42 @@
+:root{
+    --color-dark: #000;
+    --color-dark1: #3c3c33
+}
+
+.poem_container {
+    background-color: #ececec;
+    padding: 10px 50px 50px 50px;
+    margin: 40px;
+    border-radius: 10px;
+    color: var(--color-dark1);
+    animation-name: SlideIn;
+    animation-duration: 2s;
+    transition: 1s;
+}
+
+.poem_container h1 {
+    font-family: 'Noto Sans JP', monospace, Arial, Helvetica, sans-serif;
+    margin-bottom: 55px;
+    font-size: larger;
+    color: var(--color-dark);
+    line-height: 79px;
+}
+
+.poem_container p {
+    margin: 4px;
+}
+
+@keyframes SlideIn {
+	0% {
+        transform: translateY(-10000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

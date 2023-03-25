@@ -8,6 +8,7 @@ import Navbar from './components/layout/Navbar'
 import './App.css'
 import PoemGames from './components/pages/PoemGames';
 import CardPerson from './components/pages/CardPerson';
+import NatsukiDoki from './components/pages/personsArea/NatsukiDoki';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/games' element={<PoemGames />} />
         <Route path='/cardPerson' element={<CardPerson />} />
+        <Route path='/natsukiDoki' element={<NatsukiDoki />} />
       </Routes>
       </Router>
     </div>

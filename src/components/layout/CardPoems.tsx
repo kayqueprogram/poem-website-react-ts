@@ -1,12 +1,10 @@
-import style from './Cards.module.css'
+import style from './CardPoems.module.css'
 
-
-function CardPoems({ src, text }: { src?: string, text?: string }) {
+function CardPoems({children}:{children:React.ReactNode}) {
     return (
-        <div className={style.card_home1}>
-            <img src={src} alt="" />
-            <p>{text}</p>
-        </div> 
+        <div className={style.poem_container}>
+          {children}
+        </div>
     )
 }
 
