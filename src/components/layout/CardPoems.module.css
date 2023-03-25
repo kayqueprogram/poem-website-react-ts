@@ -4,11 +4,11 @@
 }
 
 .poem_container {
-    background-color: #ececec;
+    background-color: #8b8b8b;
     padding: 10px 50px 50px 50px;
     margin: 40px;
     border-radius: 10px;
-    color: var(--color-dark1);
+    color: #fff;
     animation-name: SlideIn;
     animation-duration: 2s;
     transition: 1s;
@@ -18,7 +18,7 @@
     font-family: 'Noto Sans JP', monospace, Arial, Helvetica, sans-serif;
     margin-bottom: 55px;
     font-size: larger;
-    color: var(--color-dark);
+    color: #fff;
     line-height: 79px;
 }
 
